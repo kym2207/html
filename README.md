@@ -3,3 +3,7 @@
 <hr>
 hn,hr,p,br,pre,blockquote<br>
 q,strong,b;,em,i,mark,span
+<hr>
+ui,li
+<hr>
+table,tr,td
