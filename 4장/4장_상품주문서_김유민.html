@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title> 주문서 작성하기 - 김유민</title>
+
+		<style>
+			.container {
+				width:600px;
+				margin:0 auto;
+			}
+
+			/* 순서없는 목록에 적용할 스타일 */
+			ul { 
+				list-style-type: none; /* 불릿 없앰 */
+			}
+
+			/* class=title인 label에 적용할 스타일 */
+			label.title { 
+				font-weight: bold; /* 굵은 글자 */
+				width: 80px;  /* 너비 80px */
+				float: left;  /* 왼쪽부터 배치 */
+			}
+
+			/* class=centered인 div에 적용할 스타일 */
+			div.centered { 
+				text-align: center; /* 가운데 정렬 */
+			}
+
+			/* 필드셋에 적용할 스타일*/
+			fieldset { 
+				margin: 15px 10px; /* 상하 마진 15xp, 좌우 마진 10px */
+			}
+
+			/* 필드셋의 제목 */
+			fieldset legend { 
+				font-weight: bold; /* 굵은 글자 */
+				font-size: 18px;   /* 글자 크기 18px */
+				color: rgb(231, 14, 122);   /* 글자색 자주 */
+			}
+
+			/* 목록의 각 항목 */
+			ul li { 
+				margin-bottom: 10px; /* 아래 마진 10px */
+			}
+		</style>	
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>상품 주문서</h1>
+			<form name="mtForm" method="get" action="result.html">
+				<!-- 개인 정보 구역 -->
+				<fieldset>
+                    <legend>개인 정보</legend>
+                    <label for="user_tel" class="title">이름</label><input type="text" name="user_name" id="user_name" placeholder="이름을 입력하세요" autofocus required>
+                    <br>
+                    <label for="user_tel" class="title">연락처</label>
+                    <input type="tel" name="user_tel" id="user_tel" placeholder="연락 가능한 번호" autofocus required maxlength="11">
+                </fieldset>
+
+				<!-- 배송지 정보 구역 -->
+				<fieldset>
+                    <legend>배송지 정보</legend>
+                    <label for="user_text" class="title">주소</label>
+                    <input type="text" name="user_test" id="user_test">
+                    <br>
+                    <label for="user_tel2" class="title">전화번호</label>
+                        <input type="tel" name="user_tel2" id="user_tel2" maxlength="11">
+                    <br>
+                    <label for="user_info" class="title">메모</label>
+                    <textarea name="user_info" id="user_info" cols="50" rows="3"></textarea>
+                </fieldset>
+
+				<!-- 주문 정보 구역-->
+				<fieldset>
+                    <legend>주문 정보</legend> 
+                    <input type="checkbox" name="ck_1" id="ck_1" value="">
+                    <label for="ck_1">과테말라 안티구아 (100g)</label>
+                    <input type="number" name="user_num" id="user_num" min="0" max="100" value="0">개
+                    <br>
+                    <input type="checkbox" name="ck_2" id="ck_2" value="">
+                    <label for="ck_2">인도네시아 만델링 (100g)</label>
+                    <input type="number" name="user_num" id="user_num" min="0" max="100" value="0">개
+                    <br>
+                    <input type="checkbox" name="ck_3" id="ck_3" value="">
+                    <label for="ck_3">탐라는도다(블렌딩) (100g)</label>
+                    <input type="number" name="user_num" id="user_num" min="0" max="100" value="0">개
+                    <br><br>
+                </fieldset>
+				
+                <!-- 버튼 구역-->
+				<div class="centered">
+                    
+                        <input type="submit" value="주문하기">
+                        <input type="reset" value="다시작성">
+                    
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
