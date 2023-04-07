@@ -7,9 +7,17 @@
         <title>컴퓨터공학부 - 김유민</title>
 
         <style>
+            body{
+                /*background-color: aqua;*/
+                background-image: url(imges/laptop-1483974_1920.jpg);
+                background-repeat: no-repeat;/*배경이미지 반복 금지*/
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+            }
             /* 전체 콘텐츠를 감싸는 div */
             #container{
-                background-color: skyblue;
+                /*background-color: skyblue;*/
                 width: 1000px; /*너비 지정*/
                 margin: 0 auto; /* 가로로 중앙에 배치 */
                 padding: 10px; /* 테두리와 내용 사이의 안쪽 여백 */
@@ -18,6 +26,7 @@
             #main{
                 width: 1000px;
                 border: 1px solid #ccc; /* 테두리 지정 */
+                background-color: rgba(255, 255, 255, 0.685);
             }
             img{ /* 이미지 사이즈 */
                 width: 1000px;
@@ -28,6 +37,44 @@
                 font-family: "맑은 고딕";
                 padding: 20px;
                 margin: 0;
+            }
+
+            h2{
+                color: skyblue;
+                font-size: 1.8em;/*1em=16px*/
+                text-align: center;/*가운데 정렬*/
+
+            }
+            p{
+                font-size: 1.1em;
+                font-weight: bold;/*글자 굵게*/
+                line-height: 2em;
+                text-align: center;
+            }
+            ul{
+                font-size: 1.2em;
+                line-height: 2em;
+                font-weight: center;
+                list-style-type: none;
+                color: rgb(255, 81, 0)
+            }
+            ol{
+                font-size: 0.8em;
+                font-weight: normal;
+                color: rgb(50, 50, 255);
+            }
+            .info{
+                text-align: justify;
+                padding: 20px;
+                background-color: rgba(194, 194, 247, 0.623);
+            }
+            .red_point{
+                color: crimson;
+            }
+            /*주소 작은글씨*/
+            .mini_text{
+                font-size: 0.8em;
+                padding: 20px;
             }
         </style>
 
@@ -42,7 +89,7 @@
                 <h1>컴퓨터공학부</h1>
 
                 <h2>학과 소개</h2>
-                <p>
+                <p class="info">
                     본 학부는 소프트웨어 개발 인재 양성을 목표로 1988년 전자계산학과로 출발하여 
                     2023년 현재까지 34년 동안 2천여 명의 졸업생을 배출하였습니다. <br>
                     졸업생들은 우리나라 최고의 IT기업에서부터 소프트웨어 전문개발업체, 기업체, 금융기업, 공공기관 
@@ -56,7 +103,7 @@
                 <h2>컴퓨터공학 전공</h2>
                 <p>
                     컴퓨터공학의 전반적인 교과목을 학습하여 다양한 IT분야로 진출할 수 있는 기본 역량을 배양하고, <br>
-                    사물인터넷, 클라우드시스템, 빅데이터처리, 인공지능 등 고급 IT기술에 대한 심화 학습을 통해<br>
+                    <span class="red_point">사물인터넷, 클라우드시스템, 빅데이터처리, 인공지능</span> 등 고급 IT기술에 대한 심화 학습을 통해<br>
                     취업 역량을 강화하여 현장 밀착형 IT 전문가를 양성하는 전공<br>
                 </p>
                 <hr>
@@ -64,7 +111,7 @@
                 <h2>메타버스 전공</h2>
                 <p>
                     프로그램 코딩 주제의 기초 교육과정과 메타버스 콘텐츠 제작 주제의 심화 교육과정을 통해<br>
-                    메타버스 및 게임 등 관련 분야에서 필요로 하는 코딩 역량과 콘텐츠 제작 역량을<br>
+                    <span class="red_point">메타버스</span> 및 <span class="red_point">게임</span> 등 관련 분야에서 필요로 하는 코딩 역량과 콘텐츠 제작 역량을<br>
                     겸비한 창의적인 인력을 양성하는 전공	<br>
                 </p>
                 <hr>
@@ -85,7 +132,7 @@
                 <hr>
 
                 <!--주소 구역-->
-                <p>
+                <p class="mini_text">
                     (우) 46958 부산광역시 사상구 괘법동 신라대학교 국제교육관 440-1호<br>
                     TEL : 051-999-5653,5497 FAX : 051-999-5160	
                 </p>
