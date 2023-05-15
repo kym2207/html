@@ -1,0 +1,91 @@
+body{
+    font-family: "맑은 고딕", "고딕", "굴림";
+}
+header{
+    background-color: lightcoral;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    height: 80px;
+}
+
+header h1{
+    float: left;
+    color: white;
+    padding-left: 20px;
+
+
+}
+
+header nav{
+    float: right;
+    padding-top: 15px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li{
+    display: inline;
+    margin: 15px;
+
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article{
+    clear: both;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid rgb(156, 95, 95);
+    padding: 6px;
+}
+
+section{
+    columns: 3;/* 다단 나누가*/
+    column-rule: 1px dotted rgb(218, 145, 145);
+    padding: 10px;
+
+}
+
+section h3{
+    break-before: column;/* h3기준으로 단나누기 */
+    padding-left: 15px;
+}
+
+section dt{
+    padding: 20px;
+
+}
+
+section dt, section dd{
+    line-height: 30px;
+}
+
+aside{
+    clear: both;
+    width: 80%;
+    margin:0 auto;
+    background-color: rgb(199, 137, 137);
+    padding: 10px
+}
+
+aside li{
+    line-height: 30px;
+}
+footer{
+    clear: both;
+    background-color: #333;
+    width: 80%;
+    margin:0 auto;   
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
